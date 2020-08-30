@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/neuronas5"
+    tools:context=".Preguntas">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="22.Interactuar con extraños:"
+        app:fontFamily="@font/oxygen" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="24.Encuentras a los visionarios y a los teóricos" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:text="23.Hechos:" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:text="25.En una discusión acalorada, tú:" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="475dp"
+        android:text="27.En el trabajo, es más natural para ti " />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="26.Es mejor ser:" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="28.Estás más cómodo:" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton23a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="hablan por si solos   " />
+
+        <RadioButton
+            android:id="@+id/radioButton23b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+
+            android:onClick="onRadioButtonClicked"
+            android:text="ilustran principios"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"><![CDATA[>
+
+        ]]>
+
+        <RadioButton
+            android:id="@+id/radioButton22a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="te energiza " />
+
+        <RadioButton
+            android:id="@+id/radioButton22b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="te vuelve más reservado"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="280dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton24a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="molestos" />
+
+        <RadioButton
+            android:id="@+id/radioButton24b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="fascinantes"
+            android:textAlignment="textStart" />
+</RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="355dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton25a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="te apegas a tus argumentos" />
+
+        <RadioButton
+            android:id="@+id/radioButton25b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="buscas un punto en común"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="435dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton26a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="justo" />
+
+        <RadioButton
+            android:id="@+id/radioButton26b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+
+            android:onClick="onRadioButtonClicked"
+            android:text="compasivo"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton28a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="después de una decisión " />
+
+        <RadioButton
+            android:id="@+id/radioButton28b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="antes de una decisión"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton27a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="señalar errores" />
+
+        <RadioButton
+            android:id="@+id/radioButton27b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="intentar complacer a otros"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtMensajeContinuar5"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="625dp"
+        android:text="Continuar..." />
+</android.support.design.widget.CoordinatorLayout>

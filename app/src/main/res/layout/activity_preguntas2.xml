@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/neuronas5"
+    tools:context=".Preguntas2">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_preguntas2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="8.Esperando en línea, tú sueles" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="10.Estás más interesado en:" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:text="9.Eres más:" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:text="11.Cuando decides,sueles elegir el lado que vaya más acorde a:" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="475dp"
+        android:text="13.Prefieres que los contratos sean:" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="12.En tratar de descifrar a otros tiendes a ser:" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="14.Estás más satisfecho teniendo:" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton9a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="sensible que conceptual" />
+
+        <RadioButton
+            android:id="@+id/radioButton9b"
+            style="@style/style2_btn"
+
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="conceptual que sensible"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"><![CDATA[>
+
+        ]]>
+
+        <RadioButton
+            android:id="@+id/radioButton8a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="chatear con otros     " />
+
+        <RadioButton
+            android:id="@+id/radioButton8b"
+            style="@style/style2_btn"
+
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="apegarme al trabajo"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="280dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton10a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="lo real" />
+
+        <RadioButton
+            android:id="@+id/radioButton10b"
+            style="@style/style2_btn"
+
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="lo posible "
+            android:textAlignment="textStart" />
+</RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="355dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton11a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="Hechos" />
+
+        <RadioButton
+            android:id="@+id/radioButton11b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="Deseos"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="435dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton12a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="objetivo e impersonal" />
+
+        <RadioButton
+            android:id="@+id/radioButton12b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="amistoso y personal"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton14a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="un producto terminado " />
+
+        <RadioButton
+            android:id="@+id/radioButton14b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="trabajo en progreso"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton13a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="firmados, sellados y enviados " />
+
+        <RadioButton
+            android:id="@+id/radioButton13b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="cerrados con un apretón de manos"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtMensajeContinuar3"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="625dp"
+        android:text="Continuar..." />
+</android.support.design.widget.CoordinatorLayout>

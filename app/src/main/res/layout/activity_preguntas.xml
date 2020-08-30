@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/neuronas5"
+    tools:context=".Preguntas">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/oxygen"
+        android:text=" 1.Cuando el teléfono suena tú" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="3.Es peor:" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:text="2.Sueles ser más:" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:text="4.Con las personas usualmente eres más:" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="475dp"
+        android:text="6.En el trabajo hay mucho desorden algo que tú :" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="5.Te sientes más cómodo en hacer:" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="7.Sueles:" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="215dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton2a"
+            style="@style/style_btn"
+            android:layout_width="190dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="observador que introspectivo " />
+
+        <RadioButton
+            android:id="@+id/radioButton2b"
+            style="@style/style2_btn"
+            android:onClick="onRadioButtonClicked"
+            android:text="introspectivo que observador" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"><![CDATA[>
+
+        ]]>
+
+        <RadioButton
+            android:id="@+id/radioButton1a"
+
+            style="@style/style_btn"
+
+            android:text="te apresuras a contestarlo  " />
+
+        <RadioButton
+            android:id="@+id/radioButton1b"
+
+            style="@style/style2_btn"
+
+            android:text="que alguien más lo conteste" />
+    </RadioGroup>
+
+    <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="26dp"
+    android:layout_marginTop="280dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton3a"
+            style="@style/style_btn"
+            android:layout_width="140dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="tener tu cabeza en las nubes " />
+
+        <RadioButton
+            android:id="@+id/radioButton3b"
+            style="@style/style2_btn"
+            android:layout_width="20dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="tener una rutina" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="355dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton4a"
+
+            style="@style/style_btn"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="más firme que gentil " />
+
+        <RadioButton
+            android:id="@+id/radioButton4b"
+            style="@style/style2_btn"
+
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="más gentil que firme"
+            android:textAlignment="textStart"
+            android:textColorLink="#E48C1B" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="435dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton5a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="juicios críticos      " />
+
+        <RadioButton
+            android:id="@+id/radioButton5b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="juicios de valor"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton7a"
+
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="decidirte rápidamente " />
+
+        <RadioButton
+            android:id="@+id/radioButton7b"
+            style="@style/style2_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="escoger y elegir dándote tiempo" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">>
+
+        <RadioButton
+            android:id="@+id/radioButton6a"
+            style="@style/style_btn"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="tomas tiempo de ordenar   " />
+
+        <RadioButton
+            android:id="@+id/radioButton6b"
+            style="@style/style2_btn"
+
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="toleras muy bien "
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtMensajeContinuar2"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="625dp"
+        android:text="Continuar" />
+</android.support.design.widget.CoordinatorLayout>
